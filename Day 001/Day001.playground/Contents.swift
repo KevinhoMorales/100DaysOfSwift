@@ -28,15 +28,3 @@ print(message)
 
 let percentageDouble: Double = 99
 let percentageInt = 99
-
-// MARK: SETS are unordered and cannot contain duplicates, whereas ARRAYS retain their order and can contain duplicates.
-let arrayOfBlogCategories: [String] = ["Swift", "Debugging", "Xcode", "Workflow", "Optimization"]
-var setOfBlogCategories: Set<String> = ["Swift", "Swift", "Xcode", "Swift", "Optimization"]
-print(arrayOfBlogCategories)
-print(setOfBlogCategories)
-let (inserted, memberAfterInsert) = setOfBlogCategories.insert("Dart")
-if !inserted {
-    print("\(memberAfterInsert) already exists")
-} else {
-    print("\(memberAfterInsert) doesn't exists")
-}
